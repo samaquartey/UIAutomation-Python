@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.9 on darwin)" generated="20220213 23:18:32.236" rpa="false" schemaversion="2">
+<suite id="s1" name="Uiacceptancetest" source="/Users/samquartey/Documents/PythonProject/UiAutomation/uiacceptancetest.robot">
+<test id="s1-t1" name="Valid Login">
+<kw name="Create Webdriver" library="SeleniumLibrary" type="SETUP">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/samquartey/Documents/PythonProject/Drivers/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220213 23:18:32.326" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220213 23:18:32.326" endtime="20220213 23:18:33.792"/>
+</kw>
+<kw name="Go to login page">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 23:18:33.792" endtime="20220213 23:18:33.918"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${BaseUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220213 23:18:33.918" level="INFO">Opening url 'https://onesolutionsoftwares.com/demo/my-account-2/'</msg>
+<status status="PASS" starttime="20220213 23:18:33.918" endtime="20220213 23:18:38.378"/>
+</kw>
+<status status="PASS" starttime="20220213 23:18:33.792" endtime="20220213 23:18:38.378"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>sam.a.quartey@outlook.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 23:18:38.379" level="INFO">Typing text 'sam.a.quartey@outlook.com' into text field 'username'.</msg>
+<status status="PASS" starttime="20220213 23:18:38.379" endtime="20220213 23:18:38.463"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>Nanaadum1981?</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 23:18:38.463" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20220213 23:18:38.479" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220213 23:18:38.500" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220213 23:18:38.463" endtime="20220213 23:18:38.500"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:.woocommerce-form-login__submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220213 23:18:38.500" level="INFO">Clicking button 'css:.woocommerce-form-login__submit'.</msg>
+<status status="PASS" starttime="20220213 23:18:38.500" endtime="20220213 23:18:40.611"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.woocommerce-MyAccount-content</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220213 23:18:40.611" endtime="20220213 23:18:40.624"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.woocommerce-MyAccount-navigation</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220213 23:18:40.624" endtime="20220213 23:18:40.637"/>
+</kw>
+<status status="PASS" starttime="20220213 23:18:38.378" endtime="20220213 23:18:40.637"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 23:18:40.637" endtime="20220213 23:18:40.714"/>
+</kw>
+<status status="PASS" starttime="20220213 23:18:32.325" endtime="20220213 23:18:40.714"/>
+</test>
+<doc>Login check test.</doc>
+<status status="PASS" starttime="20220213 23:18:32.236" endtime="20220213 23:18:40.715"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Uiacceptancetest">Uiacceptancetest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
