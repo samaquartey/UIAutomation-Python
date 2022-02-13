@@ -24,3 +24,4 @@ Fill the login form
     click button    css:.woocommerce-form-login__submit
     wait until element is visible     css:.woocommerce-MyAccount-content
     wait until element is visible     css:.woocommerce-MyAccount-navigation
+    element text should be      css:.woocommerce-MyAccount-navigation-link--customer-logout     Logout
