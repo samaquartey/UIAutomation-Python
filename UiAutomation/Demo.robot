@@ -24,6 +24,9 @@ Ivalid Login
     Fill the login form     ${badusername}     ${badpassword}
     Then I'm not able to login
 
+Validate list
+    Verify list are equal
+
 *** Keywords ***
 
 Fill the login form
@@ -40,3 +43,11 @@ Then I'm on my dashboard
 Then I'm not able to login
     wait until element is visible       ${errorElement}
     #element text should be      ${alertElement}        ${errorMessage}
+
+
+Verify list are equal
+    @{expectedList} = Create List      Home       Products     Cart    Checkout    My account
+    ${menuList} = get webelements     css:.menu-item
+    for     ${menu}   in  ${menuList}
+            log    ${menu.text}
+    end
