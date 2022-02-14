@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Login check test.
 Library     SeleniumLibrary
-Test Setup        Open browser
+Test Setup        Open browser session
 Test Teardown     Close browser session
 Resource          resource.robot
 

@@ -11,7 +11,7 @@ ${badpassword}     ??????
 ${errorMessage}    Unknown username. Check again or try your email address.
 
 *** Keywords ***
-Open browser
+Open browser session
     create webdriver  Chrome   executable_path=/Users/samquartey/Documents/PythonProject/Drivers/chromedriver
 
 Close browser session
